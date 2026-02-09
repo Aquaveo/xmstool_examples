@@ -1,0 +1,22 @@
+[flake8]
+select = B,C,D,E,F,I,N,W,B902,B950
+exclude =
+    .tox,
+    .git,
+    __pycache__,
+    docs/source/conf.py,
+    build,
+    dist,
+    tests/fixtures/*,
+    *.pyc,
+    *.egg-info,
+    .cache,
+    .eggs,
+    __version__.py
+max-complexity = 12
+import-order-style = appnexus
+docstring-convention = google
+application-import-names = xms.tool_examples
+max-line-length = 120
+per-file-ignores =
+    __init__.py: F401
