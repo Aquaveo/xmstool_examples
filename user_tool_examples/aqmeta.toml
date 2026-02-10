@@ -1,0 +1,6 @@
+[DMI]
+definitions = [
+  "user_tool_examples.xml"
+  ]
+migrations = [
+  ]
