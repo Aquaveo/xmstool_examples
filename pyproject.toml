@@ -3,37 +3,38 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tool_examples"
+name = "user_tool_examples"
 description = "Example tools for demonstrating how to use custom user tools in XMS."
 readme = "README.md"
 requires-python = ">=3.10"
 dynamic = ["version"]
 
 dependencies = [
+    'numpy',
     'xmstool_core>=6.0.1',
     'xmsguipy>=4.0.8',
 ]
 
 [project.entry-points."xms.dmi.aqmeta"]
-USER_TOOLS = "xms.tool_examples"
+USER_TOOLS = "user_tool_examples"
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.packages.find]
-include = ["xms.tool_examples*"]
+include = ["user_tool_examples.*"]
 
 [tool.setuptools.package-data]
-    "xms.tool_examples" = [
+    "user_tool_examples" = [
         "aqmeta.toml",
         "*.xml"
         ]
 
 [tool.setuptools_scm]
-write_to = "xms/tool_examples/__version__.py"
+write_to = "user_tool_examples/__version__.py"
 
 [tool.setuptools.dynamic]
-version = {attr = "xms/tool_examples.__version__.__version__"}
+version = {attr = "user_tool_examples.__version__.__version__"}
 
 [tool.yapf]
 column_limit = 120

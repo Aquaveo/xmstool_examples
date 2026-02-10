@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<tools filetype="xmstools" version="1">
+    <tool name="2D Mesh from 2dm"
+          category="Tool Examples"
+          description="Read a .2dm file and create a 2D Mesh."
+          class_name="MeshFrom2dmTool"
+          module_name="user_tool_examples.tools.mesh_from_2dm_tool"
+          program_name="SMS"
+          uuid="b61dd624-1d45-4f1b-bc64-9e42fe1c6461"
+    /> <!-- program_name="SMS" limits tool availability to the SMS application -->
+    <tool name="UGrid from xmc"
+          category="Tool Examples"
+          description="Read a .xmc file and create a UGrid."
+          class_name="UGridFromXmcTool"
+          module_name="user_tool_examples.tools.ugrid_from_xmc_tool"
+          uuid="8f2b3e9a-4d1c-4b7a-9e5f-2c8a1b3d6e0f"
+    />
+    <tool name="Dataset from dat"
+          category="Tool Examples"
+          description="Read a .dat file and create a Dataset."
+          class_name="DatasetFromDatTool"
+          module_name="user_tool_examples.tools.dataset_from_dat_tool"
+          uuid="d47a9b1c-3f82-4e5b-bc6d-7a921e4f0312"
+    />
+    <tool name="Compute Dataset Difference"
+          category="Tool Examples"
+          description="Compute the difference between two datasets."
+          class_name="DatasetDiffTool"
+          module_name="user_tool_examples.tools.dataset_diff_tool"
+          uuid="a1b2c3d4-e5f6-4789-8a9b-c0d1e2f3a4b5"
+    />
+</tools>
