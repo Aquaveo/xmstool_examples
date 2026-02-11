@@ -3,10 +3,14 @@ user_tool_examples
 
 ## Introduction
 This Python package contains examples of how a user can define custom tools for integration with XMS. Included are the following examples:
-- 2D Mesh from 2dm: Reads a tri/quad mesh from a .2dm formatted file and creates a 2D Mesh module object in SMS.
-- UGrid from xmc: Reads a geometry from an .xmc formatted file and creates a UGrid module object in XMS.
-- Dataset from dat: Reads a dataset from a .DAT formatted file and adds it to an existing geometry in XMS.
-- Compute Dataset Difference: Creates a diff dataset from two input datasets already loaded in XMS.
+- 2D Mesh from 2dm: Reads a tri/quad mesh from a .2dm formatted file and creates a 2D Mesh module object in SMS. This
+example contains a simple demonstation of using the `xmsgrid` and `xmsconstraint` to build a geometry for XMS.
+- UGrid from xmc: Reads a geometry from an .xmc formatted file and creates a UGrid module object in XMS. In this example
+we use the `xmsconstraint` file format and I/O.
+- Dataset from dat: Reads a dataset from a .DAT formatted file and adds it to an existing geometry in XMS. Basic usage
+of the `xmsdatasets` library for writing dataset files is shown here.
+- Compute Dataset Difference: Creates a diff dataset from two input datasets already loaded in XMS. This example
+demonstrates using `xmsdatasets` to read dataset files.
 
 ## Creating the Tool Class
 All tools inherit from an abstract base class called `Tool`. The definition for `Tool` is located in `xmstool_core`. 
@@ -178,7 +182,7 @@ package's XML file, containing only the `MeshFrom2dmTool` example.
 - program_name: This is an optional attribute a tool can use to restrict the XMS application it is available in.
 - uuid: A unique identifier for the tool.
 
-```python
+```
 # TODO: This needs to be updated for aqmeta stuff
 ```
 To complete the tool registration, the `pyproject.toml` file must include a classifier as follows:

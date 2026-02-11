@@ -65,6 +65,8 @@ class DatasetFromDatTool(Tool):
         """
         filename = arguments[self.ARG_INPUT_DAT_FILE].text_value
         self.logger.info(f'Reading {filename}')
-        dset = parse_dat_file(filename)  # This will create an XMDF file and return a reaer to it.
+        # This will create an XMDF file and return a reader to it. Inspect the parse_dat_file method for an example
+        # of using the DatasetWriter class in xmsdatasets to create an XMDF file.
+        dset = parse_dat_file(filename)
         # set_output_dataset() is typically called with a DatasetWriter instead of a DatasetReader.
         self.set_output_dataset(dset)
