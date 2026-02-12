@@ -4,7 +4,7 @@ user_tool_examples
 ## Introduction
 This Python package contains examples of how a user can define custom tools for integration with XMS. Included are the following examples:
 - 2D Mesh from 2dm: Reads a tri/quad mesh from a .2dm formatted file and creates a 2D Mesh module object in SMS. This
-example contains a simple demonstation of using the `xmsgrid` and `xmsconstraint` to build a geometry for XMS.
+example contains a simple demonstation of using the `xmsgrid` and `xmsconstraint` libraries to build a geometry for XMS.
 - UGrid from xmc: Reads a geometry from an .xmc formatted file and creates a UGrid module object in XMS. In this example
 we use the `xmsconstraint` file format and I/O.
 - Dataset from dat: Reads a dataset from a .DAT formatted file and adds it to an existing geometry in XMS. Basic usage
