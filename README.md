@@ -180,7 +180,8 @@ package's XML file, containing only the `MeshFrom2dmTool` example.
 - class_name: The Python class name of the `Tool` implementation.
 - module_name: The Python module name of the `Tool` implementation.
 - program_name: This is an optional attribute a tool can use to restrict the XMS application it is available in.
-- uuid: A unique identifier for the tool.
+- uuid: A unique identifier for the tool. Note that no two tools should ever have the same identifiers. When creating
+a new tool, generate a new random UUID (v4) for it.
 
 ```
 # TODO: This needs to be updated for aqmeta stuff
