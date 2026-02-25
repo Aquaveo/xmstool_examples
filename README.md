@@ -160,15 +160,15 @@ Similarly, several methods are also provided to send data back to XMS.
 To mark a python package as containing tools for XMS, three things are needed: 
 1) An entry point designating the root of the package (usually specified in the pyproject.toml)
 2) An `aqmeta.toml` file in that root folder that specifies the location of any tool-specifying XML files
-3) The XML files that deatil the parameters and entrypoints of each tool
+3) The XML files that detail the parameters and entrypoints of each tool
 
 ### Entry point
 XMS uses entrypoint metadata to filter the list of packages when searching for tools. The specific entry point name 
-it looks for is `xms.dmi.aqmeta`. As an example, then entry in a pyproject.toml file would look like this:
+it looks for is `xms.dmi.aqmeta`. As an example, the entry in a pyproject.toml file would look like this:
 
 ```toml
 [project.entry-points."xms.dmi.aqmeta"]
-EXAMPLE_TOOLS = "xms.user_tool_example"
+EXAMPLE_TOOLS = "user_tool_examples"
 ```
 
 ### AQMeta
